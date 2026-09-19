@@ -4,9 +4,10 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+  
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: #5a44a2;
+	--accent-dark: #312558;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -42,7 +43,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: #725cbb;
 	line-height: 1.2;
 }
 h1 {
@@ -64,11 +65,14 @@ strong,
 b {
 	font-weight: 700;
 }
-a {
+a,
+a:link,
+a:visited {
 	color: var(--accent);
 }
 a:hover {
 	color: var(--accent);
+	text-decoration: none;
 }
 p {
 	margin-bottom: 1em;
@@ -85,11 +89,6 @@ input {
 }
 table {
 	width: 100%;
-}
-img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
 }
 code {
 	padding: 2px 5px;
@@ -139,3 +138,110 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+
+  
+  /**FOOTER STYLES **/
+  .footer {
+	font-family: "Fira Code";
+	margin-top: 0.5rem;
+	font-size: 0.9rem;
+	display: grid;
+	background-color: #d3d3d3;
+	padding-left: 0.5em;
+	justify-content: space-around;
+  }
+  
+  .footer-socials span:first-child {
+	font-weight: bold;
+	justify-self: center;
+  }
+  
+  .footer-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 1rem 0;
+	justify-items: center;
+  }
+  .footer-socials {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .footer-socials > span {
+	align-self: center;
+	padding: 0.1rem;
+  }
+  
+  .footer-socials > span > a {
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	align-items: center;
+	gap: 1rem;
+  }
+  
+  .logo-social {
+	width: 1.2rem;
+  }
+  
+  .logo-social.x {
+	width: 0.9rem;
+  }
+  /**MAIN STYLES**/
+  .main {
+	padding: 0 1rem;
+  }
+  
+  @media screen and (min-width: 47.5rem) {
+
+  
+	/**FOOTER STYLES **/
+	.footer {
+	  padding: 0rem 0.25rem 0.5rem 0;
+	}
+	.footer-content {
+	  justify-self: center;
+	  gap: 5rem;
+	}
+	.footer-socials {
+	  grid-template-columns: repeat(4, 0.75fr);
+	  grid-template-rows: 1fr;
+	  justify-self: end;
+	}
+  
+	.footer-socials > span {
+	  align-self: normal;
+	}
+  
+	.footer-socials > span > a {
+	  gap: 0.5rem;
+	}
+  
+	.footer a,
+	.footer a:link,
+	.footer a:visited {
+	  color: #2e2451;
+	}
+  
+	/**MAIN STYLES**/
+	.main {
+	  padding: 2rem;
+	}
+  }
+  
+  @media screen and (min-width: 60rem) {
+
+  
+	/**FOOTER STYLES **/
+	.footer {
+	  grid-template-columns: 1fr 1fr;
+	}
+	.footer-content {
+	  justify-self: start;
+	  padding-left: 1.5em;
+	}
+	.footer-socials {
+	  align-self: center;
+	}
+  }
+  
