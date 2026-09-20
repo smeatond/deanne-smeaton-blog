@@ -52,12 +52,38 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+
+			.breadcrumb {
+			padding: 0 0.5rem 1rem;
+			
+			}
+
+			.breadcrumb ol {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			align-items: end;
+			}
+
+			.breadcrumb li:not(:last-child)::after {
+			display: inline-block;
+			margin: 0 0.25rem;
+			content: ">";
+			}
 		</style>
 	</head>
 
 	<body>
 		<Header />
 		<main>
+			<nav aria-label="Breadcrumb" class="breadcrumb">
+				<ol>
+				  <li><a href="/blog">Blog</a></li>
+				  <li><span aria-current="page">{title}</span></li>
+				</ol>
+			  </nav>
 			<article>
 				<div class="hero-image">
 					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
