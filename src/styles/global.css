@@ -191,6 +191,11 @@ hr {
   .main {
 	padding: 0 1rem;
   }
+
+  .about-photo {
+	width: 100%;
+	height: auto;
+}
   
   @media screen and (min-width: 47.5rem) {
 
