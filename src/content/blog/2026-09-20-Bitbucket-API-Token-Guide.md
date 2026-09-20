@@ -62,7 +62,7 @@ Operating systems and IDEs like to cache old authentication details. You will li
 3. In the top-right search bar, type bitbucket.org.
 4. Locate both of the following entries:
     - IntelliJ Platform Git HTTP — `http://your-username@bitbucket.org` or `hg:https://your-usename@bitbucket.org`
-    - bitbucket.org or `git:[https://bitbucket.org` (Used by the macOS Git CLI and VS Code)
+    - bitbucket.org or `git:https://bitbucket.org` (Used by the macOS Git CLI and VS Code)
 5. Right-click each entry and select Delete.
 
 ## Step 3: Re-authenticate in your IDE 
