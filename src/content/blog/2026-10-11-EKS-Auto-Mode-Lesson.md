@@ -1,6 +1,6 @@
 ---
 title: 'Why I Moved Away From EKS Auto Mode'
-description: 'Why I moved away from AWS EKS Auto Mode after unexpected cross-AZ costs and stability issues. My experience moving to Node Groups, taking more control of infrastructure, and learning the trade-offs along the way.'
+description: 'Why I moved away from AWS EKS Auto Mode after issues. My experience moving to Node Groups, taking more control of infrastructure.'
 pubDate: 'Oct 11 2026'
 heroImage: '../../assets/network.jpg'
 tags:
